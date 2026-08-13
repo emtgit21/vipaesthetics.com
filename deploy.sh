@@ -40,12 +40,17 @@ for d in . $DIRS; do
     group=$(echo "$FILES" | grep "^$d/" | grep -vE "^$d/.*/" || true)
   fi
   [ -z "$group" ] && continue
-  args=(); i=1
-  while IFS= read -r f; do
-    args+=(-F "file-${i}=@${f}"); i=$((i+1))
-  done <<< "$group"
   printf '%-30s' "→ ${d}/"
-  curl -sS -H "$AUTH" "$API/Fileman/upload_files?overwrite=1&dir=$(urlenc "$target")" "${args[@]}" \
-    | python3 -c 'import json,sys;j=json.load(sys.stdin);d=j.get("data") or {};print("ok:",d.get("succeeded"),"failed:",d.get("failed"),j.get("errors") or "")'
+  echo "$group" | split -l 40 - /tmp/dpl_chunk_
+  for chunk in /tmp/dpl_chunk_*; do
+    args=(); i=1
+    while IFS= read -r f; do
+      args+=(-F "file-${i}=@${f}"); i=$((i+1))
+    done < "$chunk"
+    curl -sS -H "$AUTH" "$API/Fileman/upload_files?overwrite=1&dir=$(urlenc "$target")" "${args[@]}" \
+      | python3 -c 'import json,sys;j=json.load(sys.stdin);d=j.get("data") or {};print("ok:",d.get("succeeded"),"failed:",d.get("failed"),j.get("errors") or "")' | tr -d '\n'
+    rm -f "$chunk"
+  done
+  echo
 done
 echo "Done: https://${DOMAIN}/"
