@@ -1,0 +1,214 @@
+@font-face {
+	font-family: 'medicom';
+	src:url('../fonts/medicom.eot');
+	src:url('../fonts/medicom.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/medicom.woff') format('woff'),
+		url('../fonts/medicom.ttf') format('truetype'),
+		url('../fonts/medicom.svg#medicom') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'medicom';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="medicom-"] {
+*/
+.medicom-shopmenu, .medicom-shop, .medicom-settings, .medicom-search, .medicom-science, .medicom-sandtime, .medicom-rss, .medicom-responsive, .medicom-radiocheck, .medicom-post, .medicom-portfolio, .medicom-pinterest, .medicom-photo, .medicom-pen, .medicom-pages, .medicom-myspace, .medicom-mobile, .medicom-lock, .medicom-list, .medicom-link, .medicom-lamp, .medicom-label, .medicom-image, .medicom-imac, .medicom-html5, .medicom-home, .medicom-google, .medicom-globe, .medicom-flicker, .medicom-face, .medicom-envelope, .medicom-dribble, .medicom-directionn, .medicom-direction, .medicom-digg2, .medicom-digg, .medicom-date, .medicom-comments, .medicom-clock2, .medicom-clock, .medicom-brain, .medicom-blog, .medicom-youtube, .medicom-yahoo, .medicom-wordpress, .medicom-vine, .medicom-video, .medicom-tweet, .medicom-truck, .medicom-tick, .medicom-telephone, .medicom-stumbleupon, .medicom-social-whale, .medicom-socialman, .medicom-social2, .medicom-skype, .medicom-sign, .medicom-shortcodes {
+	font-family: 'medicom';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.medicom-shopmenu:before {
+	content: "\e000";
+}
+.medicom-shop:before {
+	content: "\e001";
+}
+.medicom-settings:before {
+	content: "\e002";
+}
+.medicom-search:before {
+	content: "\e003";
+}
+.medicom-science:before {
+	content: "\e004";
+}
+.medicom-sandtime:before {
+	content: "\e005";
+}
+.medicom-rss:before {
+	content: "\e006";
+}
+.medicom-responsive:before {
+	content: "\e007";
+}
+.medicom-radiocheck:before {
+	content: "\e008";
+}
+.medicom-post:before {
+	content: "\e009";
+}
+.medicom-portfolio:before {
+	content: "\e00a";
+}
+.medicom-pinterest:before {
+	content: "\e00b";
+}
+.medicom-photo:before {
+	content: "\e00c";
+}
+.medicom-pen:before {
+	content: "\e00d";
+}
+.medicom-pages:before {
+	content: "\e00e";
+}
+.medicom-myspace:before {
+	content: "\e00f";
+}
+.medicom-mobile:before {
+	content: "\e010";
+}
+.medicom-lock:before {
+	content: "\e011";
+}
+.medicom-list:before {
+	content: "\e012";
+}
+.medicom-link:before {
+	content: "\e013";
+}
+.medicom-lamp:before {
+	content: "\e014";
+}
+.medicom-label:before {
+	content: "\e015";
+}
+.medicom-image:before {
+	content: "\e016";
+}
+.medicom-imac:before {
+	content: "\e017";
+}
+.medicom-html5:before {
+	content: "\e018";
+}
+.medicom-home:before {
+	content: "\e019";
+}
+.medicom-google:before {
+	content: "\e01a";
+}
+.medicom-globe:before {
+	content: "\e01b";
+}
+.medicom-flicker:before {
+	content: "\e01c";
+}
+.medicom-face:before {
+	content: "\e01d";
+}
+.medicom-envelope:before {
+	content: "\e01e";
+}
+.medicom-dribble:before {
+	content: "\e01f";
+}
+.medicom-directionn:before {
+	content: "\e020";
+}
+.medicom-direction:before {
+	content: "\e021";
+}
+.medicom-digg2:before {
+	content: "\e022";
+}
+.medicom-digg:before {
+	content: "\e023";
+}
+.medicom-date:before {
+	content: "\e024";
+}
+.medicom-comments:before {
+	content: "\e025";
+}
+.medicom-clock2:before {
+	content: "\e026";
+}
+.medicom-clock:before {
+	content: "\e027";
+}
+.medicom-brain:before {
+	content: "\e028";
+}
+.medicom-blog:before {
+	content: "\e029";
+}
+.medicom-youtube:before {
+	content: "\e02a";
+}
+.medicom-yahoo:before {
+	content: "\e02b";
+}
+.medicom-wordpress:before {
+	content: "\e02c";
+}
+.medicom-vine:before {
+	content: "\e02d";
+}
+.medicom-video:before {
+	content: "\e02e";
+}
+.medicom-tweet:before {
+	content: "\e02f";
+}
+.medicom-truck:before {
+	content: "\e030";
+}
+.medicom-tick:before {
+	content: "\e031";
+}
+.medicom-telephone:before {
+	content: "\e032";
+}
+.medicom-stumbleupon:before {
+	content: "\e033";
+}
+.medicom-social-whale:before {
+	content: "\e034";
+}
+.medicom-socialman:before {
+	content: "\e035";
+}
+.medicom-social2:before {
+	content: "\e036";
+}
+.medicom-skype:before {
+	content: "\e037";
+}
+.medicom-sign:before {
+	content: "\e038";
+}
+.medicom-shortcodes:before {
+	content: "\e039";
+}
